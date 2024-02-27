@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="2" name="Test" parallel="classes">
+  <parameter name="browser" value="chrome"></parameter>
+  
+  
+  <!--<groups>
+  <define name="SPRINTTEST">
+  <include name="Sanity"/>
+  <include name="Regression"/>
+  </define>                         
+  <run>
+  <include name="SPRINTTEST"/>
+  </run>
+  </groups> -->
+  
+    <classes>
+     <!--  <class name="TestNG.Axis.NewTest"/>
+       
+	  <class name="TestNG.Axis.Grouping"/>	   
+	   <class name="TestNG.Axis.ParellelTesting"/> -->			<!-- Parallel testing for Methods -->
+	  <!-- <class name="TestNG.Axis.Parameterisation"/>	-->		<!-- Parallel testing for Parameters -->
+     <!--  <class name="TestNG.Axis.InvokeFirefoxBrowser"/>-->			<!-- Parallel testing for Classes -->
+      <!--  <class name="TestNG.Axis.InvokeChromeBrowser"/>-->			<!-- Parallel testing for Classes -->
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
